@@ -1,5 +1,19 @@
 spring:
   application:
     name: ${SERVICE_NAME:challenge}
+score:
+  default-created-after: 2025-08-01
+  default-language: java
+  fork:
+    weight: 0.45
+    max: 243556
+  star:
+    weight: 0.45
+    max: 425932
+  updated:
+    weight: 0.1
 
-
+git:
+  base-url: https://api.github.com
+  connect-timeout: 10s
+  read-timeout: 5s
